@@ -1,51 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
     width: 300px;
     padding: 10px;
-    background-color: #f8f9fa;
+}
+
+h1,
+h2 {
+    color: #03045e;
+}
+
+h2 {
+    margin-bottom: 0;
 }
 
 h1 {
-    font-size: 20px;
     text-align: center;
 }
 
-label,
-select,
-button {
-    display: block;
-    margin-bottom: 10px;
+a {
+    color: #00b4d8;
+    line-height: 1.5;
 }
 
-select,
-button {
-    padding: 8px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 select {
-    width: 100%;
+    flex: 1;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #00a5cf;
+    border: none;
     color: white;
+    font-weight: bold;
     cursor: pointer;
-    margin: 10px 0;
 }
 
-button:hover {
-    background-color: #0056b3;
+.controls button:hover {
+    background-color: #08b4df;
+}
+
+select,
+button {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
 }
 
 li {
     margin-bottom: 5px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.deleteButton {
+    border: none;
+    background-color: #e3e3e3;
+    color: #999;
+    cursor: pointer;
 }
