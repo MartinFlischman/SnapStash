@@ -3,11 +3,14 @@
     "name": "SnapStash",
     "version": "1.0",
     "description": "A shopping wishlist extension",
-    "permissions": ["activeTab"],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-        "128": "images/icon128.png"
+            "128": "images/icon128.png"
         }
     }
 }
